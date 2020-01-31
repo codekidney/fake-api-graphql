@@ -3,5 +3,5 @@ fetch('http://localhost:4000/graphql', {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query: '{ post(id: 10) { id title user { email } } }' }),
 })
-    .then(res => res.json())
-    .then(res => console.log(res.data));
+.then(res => res.json())
+.then(res => console.log(res.data));
