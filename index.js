@@ -47,11 +47,10 @@ const userType = new GraphQLObjectType({
         name: { type: GraphQLString },
         username: { type: GraphQLString },
         email: { type: GraphQLString },
-        address: {
-            type: addressType
-        },
+        address: { type: addressType },
         phone: { type: GraphQLString },
         website: { type: GraphQLString },
+        company: { type: companyType },
     }
 })
 
